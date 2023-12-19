@@ -3,31 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Dashbord</title>
 </head>
 <body>
-    <div class="container">
-        <div class="left">
-            <i class="fa-solid fa-chart-line"></i>
-        </div>
-        <div class="middle">
-            <div class="barrerecherche">
-
+    <div class="grid-container">
+        <aside class="navbar">
+            <div class="logo">
+                <img src="grid_6057695.png" alt="" width="20" height="20">
+                <h3 class="logotext">Pravan Tools.</h3>
             </div>
-            <div class="task">
+            <div class="navelements">
+                
+                <a href="/index" class="as">
+                    <div class="arrange">
+                        <img src="home.png" alt="" class="icon">
+                        <p>Acceuil</p>
+                    </div>
+                </a>
+                <a href="/datavisualization" class="as">
+                    <div class="arrange" >
+                        <img src="data-analytics.png" alt="" class="icon">
+                        <p>Data Visualization</p>
 
-            </div>
-            <div class="dash">
-                <div class="productivity">
-                  </div>
-                <div class="progress">
-
+                    </div>
+                </a>
+                <a href="/specialities" class="as">
+                    <div class="arrange">
+                        <img src="search.png" alt="" class="icon">
+                        <p>Specialities</p>
+                    </div>
+                </a>
+                <a href="/students" class="as">
+                    <div class="arrange">
+                        <img src="student_8289404.png" alt="" class="icon">
+                        <p>Students</p>
+                    </div>
+                </a>
+                <a href="/years" class="as">
+                    <div class="arrange">
+                        <img src="calendar_2886665.png" alt="" class="icon">
+                        <p>Years</p>
+                    </div>
+                </a>
+                <div class="bas">
+                    <button id="refresh" onclick="loadData()">
+                        Actualiser
+                   </button>
+                    <a href="/">
+                        <div class="arrange">
+                            <img src="logout_1828479.png" alt="" class="icon">
+                            <p>Logout</p>
+                        </div>
+                    </a>
                 </div>
+             
             </div>
 
-        </div>
-       
+        </aside>
+        <main class="main">
+              <div class="card1">
+              </div>
+              <div class="card2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis veritatis culpa, facilis corrupti illum voluptatum labore quibusdam, ea, laudantium dicta tenetur autem aliquam voluptatem saepe possimus necessitatibus aliquid voluptate minus.</p>
+              </div>
+              <div class="card3">
+                
+              </div>
+              <div class="card4">
+                
+              </div>
+              <div class="card5">
+                
+              </div>
+              <!--To do liste -->
+              <div class="card6">
+                <img src="list_10408188.png" alt="" class="icon">
+                <p>To do List</p>
+              </div>
+              <div class="card7">
+                
+              </div>
+              <div class="card8">
+                
+              </div>
+              <div class="card9">
+                
+              </div>
+              <div class="card10">
+                
+              </div>
+        </main>
     </div>
 
 </body>
