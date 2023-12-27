@@ -123,8 +123,9 @@ main{
       overflow-wrap: break-word; 
   }
   
-  .card2 p{
+  .card2 p, h2{
      background-color: #d0e1e9;
+     margin-left: 10px;
   }
   
   
@@ -296,5 +297,60 @@ align-items: center;
 }
 .weather h1{
     background-color: #d0e1e9;
+
+}
+
+
+.card8{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: #35353f;
+    border-radius: 15px;
+    color: white; 
+}
+
+.card8 h1{
+    background-color: #35353f;
+    color: white;
+} 
+.details h3, .date span, .date{
+    background-color: #35353f;
+    color: white;
+}
+
+.clock{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #35353f;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    background-color: #35353f;
+}
+
+.wrapper .time{
+    margin-left: 15px;
+    padding-right: 15px;
+    font-size: 3.3rem;
+    background-color: #35353f;
+
+}
+
+.date{
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: #35353f;
+
+}
+.details{
+    background-color: #35353f;
 
 }

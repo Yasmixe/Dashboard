@@ -54,3 +54,65 @@ searchBtn.addEventListener("click", ()=>{
     checkweather(searchBox.value);
 
 })
+
+const timeOutput = document.querySelector(".time");
+const secOutput = document.querySelector(".sec");
+const ampmOutput = document.querySelector(".ampm");
+const monthOutput = document.querySelector(".month");
+const dayofweekoutput = document.querySelector(".dayofweek");
+const dayoutput = document.querySelector(".day");
+
+const weekday = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+];
+
+const MonthName = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+];
+
+function formatTime(val){
+    if(val <10){
+        return "0";
+    }
+    else{
+        return "";
+    }
+}
+
+function clock(){
+    const d = new Date();
+    const h = d.getHours();
+    const m = d.getMinutes();
+    const s = d.getSeconds();
+    dayofweekoutput.innerHTML = weekday[d.getDay()];
+    monthOutput.innerHTML = MonthName[d.getMonth()];
+    dayoutput.innerHTML = d.getDate();
+
+    const time = formatTime(h) + h + ":" + formatTime(m) +m;
+    const sec = formatTime(s) + s;
+
+    const ampm = h>=12 ? 'PM' : 'AM';
+    timeOutput.innerHTML = time;
+    secOutput.innerHTML = sec;
+    ampmOutput.innerHTML = ampm;
+    setInterval(clock,1000);
+}
+
+clock();
