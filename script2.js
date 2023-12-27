@@ -116,3 +116,17 @@ function clock(){
 }
 
 clock();
+
+
+let clientId = "HWqCuWHR-VUGk_nzG3bQqfFel10IhwYvu0wvvQ9hXhc";
+let endpoint = `https://api.unsplash.com/photos/?client_id=${clientId}`;
+let imageElemet = document.querySelector("#unsplashImage");
+let imagelink = document.querySelector("#imageLink");
+
+fetch(endpoint)
+.then(function(response){
+  return response.json();
+})
+.then(function(jsonData){
+  imageElemet.src = jsonData.urls.regular;
+})
