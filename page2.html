@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <title>Dashbord</title>
 </head>
 <body>
@@ -77,11 +77,39 @@
                 
               </div>
               <!--To do liste -->
-              <div class="card6">
-                <img src="list_10408188.png" alt="" class="icon">
-                <p>To do List</p>
-              </div>
+            <div class="card6">
+                <div class="head">
+                    <div class="todoliste_title">
+                        <img src="list_10408188.png" alt="" width="25px" height="25px">
+                        <p>To do List</p>
+                    </div>
+                </div>
+                <div class="search">
+                    <input type="text" id="taskInput" placeholder="Add a new task">
+                    <button onclick="addTask()">
+                        <img src="add_1237946.png" alt="" width="18px" height="18px">
+                    </button>
+                </div>
+                
+                <ul id="taskList"></ul>
+            </div>
+<!--weather card -->
               <div class="card7">
+                <div class="search2">
+                    <input type="text" id="taskInput" placeholder="Enter city name">
+                    <button >
+                        <img src="search_8094123.png" alt="" width="18px" height="18px">
+                    </button>
+                </div>
+                <div class="weather">
+                    <img src="weather-app-img/images/mist.png" class="weather_icon">
+                    <h1 class="temp">
+                        22 °c
+                    </h1>
+                    <h1 class="city">
+                        Seoul
+                    </h1>
+                </div>
                 
               </div>
               <div class="card8">
@@ -96,5 +124,7 @@
         </main>
     </div>
 
+
+    <script src="script2.js"></script>
 </body>
 </html>
